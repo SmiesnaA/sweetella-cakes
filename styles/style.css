@@ -155,6 +155,7 @@ nav a:hover, .active {
 }
 
 #quote p {
+    cursor: auto;
     color: #FFFFFF;
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
@@ -286,6 +287,10 @@ nav a:hover, .active {
     text-transform: uppercase;
 }
 
+section, section h1 {
+    cursor: auto;
+}
+
 #cake {
     grid-area: cake;
 }
@@ -299,7 +304,7 @@ nav a:hover, .active {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    background: linear-gradient(90deg,#c3a15cff, #ff4444, #efefef, #c3a15cff);
+    background: linear-gradient(90deg,rgb(243, 210, 143), #ffffff);
     background-size: 400%;
     width: 300px;
     height: 100px;
@@ -331,14 +336,24 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
     height: 100px;
     background-color: #212a24e8;
     color: #FFFFFF;
     font-size: 1em;
+    font-family: 'Raleway', sans-serif;
 }
 
-footer a {
+footer a.resource {
+    font-family: 'Raleway', sans-serif;
+    color: #c3a15cff;
+    font-size: 1em;
+    text-decoration: none;
+    right: 50%;
+}
+
+footer a:not(.resource) {
     color: #c3a15cff;
     text-decoration: none;
     font-size: 2.5em;
@@ -722,6 +737,7 @@ br {
    }
 
    #quote  {
+       cursor: auto;
         font-size: 100%;
    }
 
